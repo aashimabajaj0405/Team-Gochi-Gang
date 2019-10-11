@@ -1,0 +1,1 @@
+web: gunicorn Gochigang.wsgi --log-file -
