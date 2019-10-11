@@ -25,3 +25,9 @@ def maps(request):
         
     }
     return render(request,'maps.html',context)
+
+def login(request):
+    context = {
+        
+    }
+    return render(request,'login.html',context)
