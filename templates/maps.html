@@ -171,6 +171,15 @@ body,
         </div>
     </div>
 
+    <div class="ads" id="ads2" style="animation-delay: 0.5s;">
+        <div style="float: right;color: rgb(255, 49, 49);font-size: 1.5em;font-weight: bold;cursor: pointer;" onclick="close_it2();">
+            &times;
+        </div>
+        <font style="font-weight: bold;">Suggestion</font> - 
+        <br>
+        Your next nearest marker is towards your south in the BVP playground at latitude: 28.6765, and longitude: 77.1125
+    </div>
+
     <div class="ads" id="ads1" style="animation-delay: 1s;">
         <div style="float: right;color: rgb(255, 49, 49);font-size: 1.5em;font-weight: bold;cursor: pointer;" onclick="close_it1();">
             &times; close ads
@@ -190,12 +199,17 @@ body,
 <script>
     const ads = document.getElementById("ads");
     const ads1 = document.getElementById("ads1");
+    const ads2 = document.getElementById("ads2");
     const add_class = document.getElementById("add_class");
     const close_it = () => {
         ads.style.display = "none";
     }
     const close_it1 = () => {
         ads1.style.display = "none";
+    }
+    
+    const close_it2 = () => {
+        ads2.style.display = "none";
     }
     const addClass = () => {
         add_class.classList.add("dis");
@@ -321,6 +335,13 @@ function success(position){
                 addClass();
             },3000
         );
+
+        setTimeout(
+            ()=>{
+                location.href = "https://india-gate1.firebaseapp.com/";
+            }
+            ,10000
+        );
     }
     
     setInterval(()=>{
@@ -404,7 +425,7 @@ const fail = (err) => {
 <script type="text/javascript">
 (function () {
     var options = {
-        whatsapp: "+91 8826090016",
+        whatsapp: "+91 9315387893",
         call_to_action: "Message us",
         button_color: "#E74339",
         position: "right",
