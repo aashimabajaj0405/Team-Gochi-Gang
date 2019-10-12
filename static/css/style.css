@@ -750,7 +750,7 @@ button:focus {
     padding: 0px 38px;
     color: #ffffff;
     border: 1px solid #000000;
-    letter-spacing: 2px; }
+    letter-spacing: 5px; }
     .cta-area .primary-btn:hover {
       background: transparent;
       color: #000000; }
